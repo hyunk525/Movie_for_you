@@ -20,7 +20,7 @@ driver = webdriver.Chrome('./chromedriver.exe', options=options)
 # review내용 >>  //*[@id="content"]/div[1]/div[4]/div[1]/div[4]
 # review페이지넘버 >>  //*[@id="pagerTagAnchor1"]
 
-your_year = 2020
+your_year = 2021
 
 review_button_xpath = '//*[@id="movieEndTabMenu"]/li[6]/a'
 review_number_xpath = '//*[@id="reviewTab"]/div/div/div[2]/span/em'
@@ -28,7 +28,7 @@ review_number_xpath = '//*[@id="reviewTab"]/div/div/div[2]/span/em'
 review_xpath = '//*[@id="content"]/div[1]/div[4]/div[1]/div[4]'
 
 #네이버영화랭킹-디렉토리-개봉년도(2020) 페이지
-for i in range(1, 38): # ~38
+for i in range(1, 39): # ~38
     url = 'https://movie.naver.com/movie/sdb/browsing/bmovie.naver?open={}&page={}'.format(your_year, i)
     titles = []
     reviews = []
